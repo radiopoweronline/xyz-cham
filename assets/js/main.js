@@ -228,15 +228,7 @@
 		/*============================
 		7-Tweet
 		============================*/
-		if ($('.latest-tweet').length!=0 && !($('.latest-tweet').hasClass('jsExecuted'))){
-			$('.latest-tweet').addClass('jsExecuted');
-			 $('.latest-tweet').twittie({
-				 username:$('.latest-tweet').attr('data-username'),
-				dateFormat: '%b. %d, %Y',template: '{{tweet}} <time class="date">{{date}}</time>',
-				count: $('.latest-tweet').data('limit'),
-				apiPath:"assets/php/tweet_api/tweet.php",
-			});
-		}
+		
 		
 		/*============================
 		8-Google Maps
