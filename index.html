@@ -519,7 +519,7 @@ Vegas Slider Images
 	=================================-->
 <footer> 
   <div class="container text-center">
-    <p>Copyright 2025 Radio Power</p>
+    <p>Copyright <span id="year"></span> Radio Power</p>
     <p>
       <a href="mailto:radiopowercolombia@gmail.com" style="color: #d3d3d3; text-decoration: none;">
         radiopowercolombia@gmail.com
@@ -527,6 +527,11 @@ Vegas Slider Images
     </p>
   </div>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 <!--=================================
 Script Source
 =================================--> 
