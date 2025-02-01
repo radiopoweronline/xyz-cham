@@ -411,16 +411,122 @@ Vegas Slider Images
 
 <div id="ajaxArea">
     <div class="pageContentArea">
+	<!--=================================
+	Directorio radios
+	=================================-->
+	<section id="Directorio radios">
+  <div class="container">
+<style>
+    :root {
+        --bg-color: rgba(0, 0, 0, 0.0); /* Fondo completamente transparente */
+        --icon-size: 50px;
+        --icon-size-mobile: 40px;
+        --transition-speed: 0.3s;
+    }
 
+    /* Contenedor principal */
+    .transparent-container {
+        background-color: var(--bg-color);
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        margin: auto;
+        transition: transform var(--transition-speed) ease-in-out;
+    }
+
+    .transparent-container:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Estilo para los iconos */
+    .social-icons {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* 1 fila con 8 íconos */
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .social-icons li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icons a {
+        display: block;
+        width: var(--icon-size);
+        height: var(--icon-size);
+        transition: transform var(--transition-speed) ease-in-out;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.1);
+    }
+
+    .social-icons img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+        .social-icons {
+            grid-template-columns: repeat(4, 1fr); /* 2 filas de 4 íconos */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .transparent-container {
+            padding: 10px;
+        }
+
+        .social-icons {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+
+        .social-icons a {
+            width: var(--icon-size-mobile);
+            height: var(--icon-size-mobile);
+        }
+    }
+</style>
+
+<div class="transparent-container">
+    <ul class="social-icons">
+        <li><a href="https://mytuner-radio.com/radio/champeta-online-504597/" target="_blank"><img src="https://i.imgur.com/zAoZTQJ.png" alt="MyTuner Radio" loading="lazy"></a></li>
+        <li><a href="https://onlineradiobox.com/co/champetaonline/?cs=co.champetaonline&played=1" target="_blank"><img src="https://i.imgur.com/CYYfq5I.png" alt="RadioBox" loading="lazy"></a></li>
+        <li><a href="https://www.radio.net/s/champetaonline" target="_blank"><img src="https://i.imgur.com/U7WLbpt.png" alt="RadioNet" loading="lazy"></a></li>
+        <li><a href="https://www.emisorascolombianas.co/champeta-online" target="_blank"><img src="https://i.imgur.com/BvJlMxK.png" alt="Emisoras Colombianas" loading="lazy"></a></li>
+        <li><a href="https://tunein.com/radio/Champeta-Online-s329928/" target="_blank"><img src="https://i.imgur.com/KLSVKQ9.png" alt="TuneIn Radio" loading="lazy"></a></li>
+        <li><a href="https://radios.com.co/champeta-online/" target="_blank"><img src="https://i.imgur.com/kFGlaei.png" alt="Radios.com.co" loading="lazy"></a></li>
+        <li><a href="https://www.claromusica.com/radios/CO/DC/bogota" target="_blank"><img src="https://i.imgur.com/Dfwu5Gl.png" alt="Claro Música" loading="lazy"></a></li>
+        <li><a href="https://thenonstopradio.com/radio/champeta-online" target="_blank"><img src="https://i.imgur.com/sl25VFe.png" alt="Non Stop Radio" loading="lazy"></a></li>
+    </ul>
+</div>
+
+</section>
 <!--=================================
 	Footer
 	=================================-->
-<footer>
+<footer> 
   <div class="container text-center">
     <p>Copyright 2025 Radio Power</p>
+    <p>
+      <a href="mailto:radiopowercolombia@gmail.com" style="color: #d3d3d3; text-decoration: none;">
+        radiopowercolombia@gmail.com
+      </a>
+    </p>
   </div>
 </footer>
-
 <!--=================================
 Script Source
 =================================--> 
